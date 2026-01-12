@@ -1,0 +1,32 @@
+{
+  "name": "errorbase-backend",
+  "version": "1.0.0",
+  "description": "Where bugs meet their end",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:nikkdogra/errorbase-backend.git"
+  },
+  "license": "ISC",
+  "author": "Nikhil Dogra",
+  "type": "commonjs",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "cross-env DEPLOYMENT_STAGE=dev tsx watch src/app.ts",
+    "prod": "cross-env DEPLOYMENT_STAGE=prod tsx watch src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  }
+}
